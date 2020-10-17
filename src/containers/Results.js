@@ -17,10 +17,10 @@ const Results = ({ location }) => {
   useEffect(() => {
     toggleLoader(true)
     getItemsByQuery(search)
-      .then(({ data }) => setResults(data.items))
+      .then(({ data }) => setResults(data))
       .catch((error) => {
         console.log(error)
-        setResults([])
+        setResults({ items: [], categories: [] })
       })
       .finally(() => toggleLoader(false))
   }, [search])

@@ -585,8 +585,16 @@ video {
   display: table;
 }
 
+.last\:hidden:last-child {
+  display: none;
+}
+
 .flex-col {
   flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
 }
 
 .items-center {
@@ -595,6 +603,10 @@ video {
 
 .font-thin {
   font-weight: 200;
+}
+
+.h-3 {
+  height: 0.75rem;
 }
 
 .h-10 {
@@ -607,6 +619,15 @@ video {
 
 .h-16 {
   height: 4rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+}
+
+.mx-2 {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }
 
 .mb-3 {
@@ -1182,6 +1203,13 @@ img {
 }
 
 @media (min-width: 1024px) {
+  .lg\:text-base {
+    font-size: 1rem;
+  }
+
+  .lg\:mb-5 {
+    margin-bottom: 1.25rem;
+  }
 }
 
 @media (min-width: 1280px) {
