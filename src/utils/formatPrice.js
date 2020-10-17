@@ -7,6 +7,7 @@ export const formatPrice = (price) => {
     default: '$'
   }
   const formattedCurrency = options[currency] || options.default
-  const fixedAmount = decimals ? `${amount},${decimals}` : amount
-  return `${formattedCurrency} ${fixedAmount}`
+  const formattedAmount = Intl.NumberFormat('de-DE').format(amount)
+  const fixedPrice = decimals ? `${formattedAmount},${decimals}` : formattedAmount
+  return `${formattedCurrency} ${fixedPrice}`
 }

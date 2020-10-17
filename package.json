@@ -18,7 +18,8 @@
   },
   "scripts": {
     "start": "yarn build:css && react-scripts start",
-    "build": "yarn build:css react-scripts build",
+    "build": "yarn build:css && react-scripts build",
+    "deploy": "yarn buid && firebase deploy",
     "build:css": "tailwindcss build src/styles/tailwind.css -o src/styles/main.css",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

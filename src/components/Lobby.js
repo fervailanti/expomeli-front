@@ -39,8 +39,10 @@ const Lobby = () => {
         <div>
           <h2>Stack</h2>
           <p className="mb-4">
-            <b>_Frontend</b>: está construido esencialmente con{' '}
-            <L to="https://es.reactjs.org/">React</L> (Hooks),{' '}
+            <L to="https://github.com/fervailanti/expomeli-front">
+              <b>_Frontend</b>
+            </L>
+            : está construido esencialmente con <L to="https://es.reactjs.org/">React</L> (Hooks),{' '}
             <L to="https://reactrouter.com/">React Router</L>,{' '}
             <L to="https://tailwindcss.com/">TailwindCSS</L>,{' '}
             <L to="https://github.com/axios/axios">Axios</L>,{' '}
@@ -48,10 +50,15 @@ const Lobby = () => {
             y un par más de paquetes detallados en el <code>package.json</code>.
           </p>
           <p>
-            <b>_BFF (Backend For Frontend)</b>: está hecho con <L to="https://nodejs.org/">Node</L>{' '}
-            y entorno a <L to="https://expressjs.com/">Express</L>. Se encarga principalmente de
-            devolver la data preparada para su consumo en el Frontend. Tiene comunicación con las
-            siguientes API's de MercadoLibre:
+            <L to="https://github.com/fervailanti/expomeli-api">
+              <b>_API (Backend For Frontend)</b>
+            </L>
+            : está hecho con <L to="https://nodejs.org/">Node</L> y{' '}
+            <L to="https://expressjs.com/">Express</L>, además de{' '}
+            <L to="https://github.com/standard-things/esm#readme">ES Modules</L> y{' '}
+            <L to="https://github.com/axios/axios">Axios</L>. Se encarga principalmente de devolver
+            la data preparada para su consumo en el Frontend. Tiene comunicación con las siguientes
+            APIs de MercadoLibre:
           </p>
           <ul className="mt-4 break-words">
             <li>
