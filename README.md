@@ -1,13 +1,13 @@
-# Expo Meli Web App
+# Expomeli Web App 🔍
 
-Web app for searching MercadoLibre products 🔍<br />
+Web app for searching MercadoLibre products.<br />
 See it in action at [expomeli.web.app](https://expomeli.web.app/) 🔥
 
 ## Stack
 
 The project is builded with [React](https://es.reactjs.org/) (hooks), [React Router](https://reactrouter.com/), [TailwindCSS](https://tailwindcss.com/), [Axios](https://github.com/axios/axios), [Testing Library](https://testing-library.com/docs/react-testing-library/intro) and a couple more dependencies detailed in the `package.json`.
 
-The application also makes use of a BFF (Backend For Frontend) API builded with [Node.js](https://nodejs.org/en/). You can see more in [expomeli-api](https://github.com/fervailanti/expomeli-api).
+The application also makes use of a BFF (Backend For Frontend) API builded with [Node.js](https://nodejs.org/en/). You can see more at [expomeli-api](https://github.com/fervailanti/expomeli-api).
 
 ## CI And Hosting
 
