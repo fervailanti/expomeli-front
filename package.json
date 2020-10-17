@@ -1,18 +1,25 @@
 {
-  "name": "dinosearch-front",
+  "name": "expomeli-front",
   "version": "0.1.0",
+  "description": "Web app for searching MercadoLibre products",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "autoprefixer": "^10.0.1",
+    "axios": "^0.20.0",
+    "query-string": "^6.13.5",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
-    "react-scripts": "3.4.3"
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "3.4.3",
+    "tailwindcss": "^1.9.2"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "yarn build:css && react-scripts start",
+    "build": "yarn build:css react-scripts build",
+    "build:css": "tailwindcss build src/styles/tailwind.css -o src/styles/main.css",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -30,5 +37,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "stylelint-config-recommended": "^3.0.0"
   }
 }
