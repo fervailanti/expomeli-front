@@ -5,7 +5,7 @@ import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom'
 import Results from './containers/Results'
 import ItemSummary from './containers/ItemSummary'
 import Lobby from './components/Lobby'
-import './styles/main.css'
+import './styles/build.css'
 
 const App = () => (
   <BrowserRouter>

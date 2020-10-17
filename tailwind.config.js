@@ -3,7 +3,6 @@ module.exports = {
     purgeLayersByDefault: true
   },
   purge: {
-    enabled: true,
     content: ['public/*.html', './src/**/*.html', './src/**/*.js']
   },
   theme: {
