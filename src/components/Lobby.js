@@ -27,12 +27,12 @@ const Lobby = () => {
               <code>/items?search=</code> para motrar los resultados de la búsqueda.
             </li>
             <li>
-              <code>items/:id</code> para mostrar el detalle de un producto puntual seleccionado.
+              <code>/items/:id</code> para mostrar el detalle de un producto puntual seleccionado.
             </li>
           </ul>
           <p className="font-thin">
             <b>Nota</b>: Al ser un proyecto con finalidad de test, <i>no permite la compra</i>, y
-            solo mostrarán 4 productos por búsqueda. Además, no se montrarán todos los detalles
+            solo se mostrarán 4 productos por búsqueda. Además, no se montrarán todos los detalles
             disponibles de los productos, solo los más destacados de estos.
           </p>
         </div>
@@ -53,12 +53,12 @@ const Lobby = () => {
             <L to="https://github.com/fervailanti/expomeli-api">
               <b>_API (Backend For Frontend)</b>
             </L>
-            : está hecho con <L to="https://nodejs.org/">Node</L> y{' '}
+            : está hecho principalmente en <L to="https://nodejs.org/">Node.js</L> y{' '}
             <L to="https://expressjs.com/">Express</L>, además de{' '}
             <L to="https://github.com/standard-things/esm#readme">ES Modules</L> y{' '}
-            <L to="https://github.com/axios/axios">Axios</L>. Se encarga principalmente de devolver
-            la data preparada para su consumo en el Frontend. Tiene comunicación con las siguientes
-            APIs de MercadoLibre:
+            <L to="https://github.com/axios/axios">Axios</L>. Se encarga principalmente de manejar
+            la información y prepararla para su consumo en el Frontend. Tiene comunicación con los
+            siguientes endpoints de MercadoLibre:
           </p>
           <ul className="mt-4 break-words">
             <li>
@@ -81,7 +81,7 @@ const Lobby = () => {
         <div className="mb-3">
           <h2>Autor</h2>
           <p>
-            Desarrollado por <b>Fernando Vailanti</b> en Buenos Aires, Argentina.
+            Desarrollado por <b>Fernando Vailanti</b> en Buenos Aires, Argentina {emoji('🇦🇷')}
           </p>
           <p>
             Puedes encontrarme en <L to="https://github.com/fervailanti">GitHub</L>,{' '}

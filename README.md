@@ -19,28 +19,14 @@ Every time you push to `main` the action is dispatched, it runs all the tests, p
 
 In the project directory, you can run:
 
-##### `yarn start`
+`yarn start`: Will build css and runs the app in the development mode at [http://localhost:3000](http://localhost:3000).
 
-Will build css and runs the app in the development mode at [http://localhost:3000](http://localhost:3000).
+`yarn build:css`: Will only build css in development mode.
 
-##### `yarn build:css`
+`yarn build:dev`: Will build css in development mode and build the app for production to the `build` folder.
 
-Will only build css in development mode.
+`yarn build:prod`: Will build css in production mode and build the app for production to the `build` folder.
 
-##### `yarn build:dev`
+`yarn test`: Launches the test runner in the interactive watch mode.<br />
 
-Will build css in development mode and build the app for production to the `build` folder.
-
-##### `yarn build:prod`
-
-Will build css in production mode and build the app for production to the `build` folder.
-
-##### `yarn test`
-
-Launches the test runner in the interactive watch mode.<br />
-
-##### `yarn eject`
-
-This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+`yarn eject`: This command will remove the single build dependency from your project. Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
