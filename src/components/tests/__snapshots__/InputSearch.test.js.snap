@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InputSearch component should render correctly 1`] = `
+<div>
+  <form
+    class="search-box"
+  >
+    <input
+      class="search-input"
+      placeholder="Buscar productos, marcas y más..."
+      type="text"
+      value=""
+    />
+    <button
+      class="search-btn"
+      type="submit"
+    >
+      <img
+        alt="search_icon"
+        class="search-icon"
+        src="[object Object]"
+      />
+    </button>
+  </form>
+</div>
+`;

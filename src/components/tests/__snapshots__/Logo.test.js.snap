@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Logo component should render correctly 1`] = `
+<div>
+  <img
+    alt="mercadolibre_logo"
+    class="h-12 cursor-pointer"
+    src="mercadolibre_logo_reduced.png"
+  />
+</div>
+`;

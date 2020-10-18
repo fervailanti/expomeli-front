@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Breadcrumb component should render correctly 1`] = `
+<div>
+  <div
+    class="flex flex-wrap items-center mb-3 lg:mb-5"
+  >
+    <p
+      class="font-thin text-sm lg:text-base"
+    >
+      Apple
+    </p>
+    <img
+      alt="arrow-icon"
+      class="h-3 mx-2 last:hidden"
+      src="[object Object]"
+    />
+    <p
+      class="font-thin text-sm lg:text-base"
+    >
+      iPhone
+    </p>
+    <img
+      alt="arrow-icon"
+      class="h-3 mx-2 last:hidden"
+      src="[object Object]"
+    />
+  </div>
+</div>
+`;

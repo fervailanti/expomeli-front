@@ -1,0 +1,78 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ItemDetails component should render correctly 1`] = `
+<div>
+  <button
+    class="flex items-center font-thin mb-3 lg:mb-5 hover:text-blue"
+  >
+    <img
+      alt="go-back-arrow"
+      class="h-4 mr-2"
+      src="[object Object]"
+    />
+    Volver al listado
+  </button>
+  <div
+    class="product"
+  >
+    <div
+      class="sale"
+    >
+      <img
+        alt="product"
+        class="product-img"
+        src="https://picsum.photos/500"
+      />
+      <div
+        class="details"
+      >
+        <div>
+          <p
+            class="hairline"
+          >
+            Nuevo | 13 vendidos
+          </p>
+          <p
+            class="title"
+          >
+            iPhone 11 64 Gb
+          </p>
+          <p
+            class="price"
+          >
+            $ 174.999,99
+          </p>
+        </div>
+        <div
+          class="flex flex-col items-center mb-8"
+        >
+          <button
+            class="btn mt-4"
+          >
+            Comprar ahora
+          </button>
+          <button
+            class="btn-ghost mt-4"
+          >
+            Agregar al carrito
+          </button>
+        </div>
+      </div>
+    </div>
+    <div
+      class="detail-section"
+    >
+      <p
+        class="title"
+      >
+        Descripción del producto
+      </p>
+      <p
+        class="description"
+      >
+        lorem ipsum
+      </p>
+    </div>
+  </div>
+</div>
+`;

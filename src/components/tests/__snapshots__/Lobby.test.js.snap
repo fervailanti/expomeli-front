@@ -1,0 +1,300 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Lobby component should render correctly 1`] = `
+<div>
+  <section
+    class="layout"
+  >
+    <div
+      class="lobby"
+    >
+      <div
+        class="mb-4"
+      >
+        <h1>
+          ¡Hola! 
+          <span
+            aria-label="emoji"
+            role="img"
+          >
+            👋
+          </span>
+        </h1>
+        <p>
+          Ya puedes empezár a encontrar productos en el buscardor de acá arriba 
+          <span
+            aria-label="emoji"
+            role="img"
+          >
+            👆
+          </span>
+        </p>
+        <p
+          class="mb-4"
+        >
+          Existen dos rutas más (aparte de la actual):
+        </p>
+        <ul
+          class="mb-5"
+        >
+          <li>
+            <code>
+              /items?search=
+            </code>
+             para motrar los resultados de la búsqueda.
+          </li>
+          <li>
+            <code>
+              /items/:id
+            </code>
+             para mostrar el detalle de un producto puntual seleccionado.
+          </li>
+        </ul>
+        <p
+          class="font-thin"
+        >
+          <b>
+            Nota
+          </b>
+          : Al ser un proyecto con finalidad de test, 
+          <i>
+            no permite la compra
+          </i>
+          , y solo se mostrarán 4 productos por búsqueda. Además, no se montrarán todos los detalles disponibles de los productos, solo los más destacados de estos.
+        </p>
+      </div>
+      <div>
+        <h2>
+          Stack
+        </h2>
+        <p
+          class="mb-4"
+        >
+          <a
+            class="text-blue-400"
+            href="https://github.com/fervailanti/expomeli-front"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <b>
+              _Frontend
+            </b>
+          </a>
+          : está construido esencialmente con 
+          <a
+            class="text-blue-400"
+            href="https://es.reactjs.org/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            React
+          </a>
+           (Hooks),
+           
+          <a
+            class="text-blue-400"
+            href="https://reactrouter.com/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            React Router
+          </a>
+          ,
+           
+          <a
+            class="text-blue-400"
+            href="https://tailwindcss.com/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            TailwindCSS
+          </a>
+          ,
+           
+          <a
+            class="text-blue-400"
+            href="https://github.com/axios/axios"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Axios
+          </a>
+          ,
+           
+          <a
+            class="text-blue-400"
+            href="https://testing-library.com/docs/react-testing-library/intro"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Testing Library
+          </a>
+           
+          y un par más de paquetes detallados en el 
+          <code>
+            package.json
+          </code>
+          .
+        </p>
+        <p>
+          <a
+            class="text-blue-400"
+            href="https://github.com/fervailanti/expomeli-api"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <b>
+              _API (Backend For Frontend)
+            </b>
+          </a>
+          : está hecho principalmente en 
+          <a
+            class="text-blue-400"
+            href="https://nodejs.org/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Node.js
+          </a>
+           y
+           
+          <a
+            class="text-blue-400"
+            href="https://expressjs.com/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Express
+          </a>
+          , además de
+           
+          <a
+            class="text-blue-400"
+            href="https://github.com/standard-things/esm#readme"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            ES Modules
+          </a>
+           y
+           
+          <a
+            class="text-blue-400"
+            href="https://github.com/axios/axios"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Axios
+          </a>
+          . Se encarga principalmente de manejar la información y prepararla para su consumo en el Frontend. Tiene comunicación con los siguientes endpoints de MercadoLibre:
+        </p>
+        <ul
+          class="mt-4 break-words"
+        >
+          <li>
+            <a
+              class="text-blue-400"
+              href="https://api.mercadolibre.com/sites/MLA/search?q=​:query"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              https://api.mercadolibre.com/sites/MLA/search?q=​:query
+            </a>
+          </li>
+          <li>
+            <a
+              class="text-blue-400"
+              href="https://api.mercadolibre.com/items/​:id"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              https://api.mercadolibre.com/items/​:id
+            </a>
+          </li>
+          <li>
+            <a
+              class="text-blue-400"
+              href="https://api.mercadolibre.com/items/​:id​/description"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              https://api.mercadolibre.com/items/​:id​/description
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div
+        class="mb-3"
+      >
+        <h2>
+          Autor
+        </h2>
+        <p>
+          Desarrollado por 
+          <b>
+            Fernando Vailanti
+          </b>
+           en Buenos Aires, Argentina 
+          <span
+            aria-label="emoji"
+            role="img"
+          >
+            🇦🇷
+          </span>
+        </p>
+        <p>
+          Puedes encontrarme en 
+          <a
+            class="text-blue-400"
+            href="https://github.com/fervailanti"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            GitHub
+          </a>
+          ,
+           
+          <a
+            class="text-blue-400"
+            href="https://www.linkedin.com/in/fernando-vailanti-559b96164/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            LinkedIn
+          </a>
+          ,
+           
+          <a
+            class="text-blue-400"
+            href="https://medium.com/@fernandovailanti"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Medium
+          </a>
+           y
+           
+          <a
+            class="text-blue-400"
+            href="mailto:fernandovailanti17@gmail.com"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Gmail
+          </a>
+          .
+        </p>
+        <p>
+          ¡Saludos! 
+          <span
+            aria-label="emoji"
+            role="img"
+          >
+            💪
+          </span>
+        </p>
+      </div>
+    </div>
+  </section>
+</div>
+`;

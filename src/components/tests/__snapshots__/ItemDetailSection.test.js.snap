@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ItemDetailSection component should render correctly 1`] = `
+<div>
+  <div
+    class="detail-section"
+  >
+    <p
+      class="title"
+    >
+      Descripción del producto
+    </p>
+    <p
+      class="description"
+    >
+      lorem ipsum lorem ipsum lorem ipsum lorem
+    </p>
+  </div>
+</div>
+`;
