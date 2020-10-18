@@ -19,13 +19,8 @@ const ItemSummary = ({ location }) => {
   useEffect(() => {
     toggleLoader(true)
     getItemById(id)
-      .then(({ data }) => {
-        setItem(data.item)
-      })
-      .catch((error) => {
-        console.log(error)
-        setItem({})
-      })
+      .then((data) => setItem(data.item))
+      .catch(() => setItem({}))
       .finally(() => toggleLoader(false))
   }, [id])
 
