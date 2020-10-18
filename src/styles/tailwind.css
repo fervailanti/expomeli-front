@@ -127,8 +127,8 @@ img {
 }
 .sale .product-img {
   @apply mb-8 mx-auto w-full object-contain;
-  max-height: 500px;
-  max-width: 500px;
+  max-height: 200px;
+  max-width: 200px;
 }
 .sale .details {
   @apply flex flex-col justify-between w-full;
@@ -137,10 +137,10 @@ img {
   @apply mb-1 font-thin;
 }
 .details .title {
-  @apply text-xl mb-2;
+  @apply text-2xl mb-2;
 }
 .details .price {
-  @apply text-3xl font-hairline mb-4;
+  @apply text-4xl font-hairline mb-4;
 }
 
 @screen sm {
@@ -159,6 +159,10 @@ img {
   .details .price {
     @apply text-5xl;
   }
+  .sale .product-img {
+    max-height: 300px;
+    max-width: 300px;
+  }
 }
 
 @screen lg {
@@ -171,6 +175,8 @@ img {
   .sale .product-img {
     @apply w-3/5;
     height: 500px;
+    max-height: 500px;
+    max-width: 500px;
   }
 }
 
@@ -191,19 +197,19 @@ img {
   @apply w-20 h-20 object-contain flex-shrink-0 self-center cursor-pointer;
 }
 .item .main {
-  @apply mx-2 w-full;
+  @apply mx-2 w-full flex flex-col;
 }
 .main .title {
-  @apply text-sm font-thin cursor-pointer;
+  @apply text-base font-thin cursor-pointer;
 }
 .main .price {
-  @apply text-sm font-light mt-1;
+  @apply text-xl;
 }
 .main .tag {
-  @apply text-xs font-medium text-green-200 bg-green-100 inline rounded px-1 py-px;
+  @apply self-start text-xs font-medium text-green-200 bg-green-100 inline rounded px-1 py-px my-2;
 }
 .main .condition {
-  @apply text-xs font-hairline rounded inline;
+  @apply text-xs font-hairline rounded self-start mb-1;
 }
 
 @screen sm {
@@ -213,9 +219,6 @@ img {
   .item .main {
     @apply mx-3;
   }
-  .main .price {
-    @apply text-lg;
-  }
 }
 
 @screen md {
@@ -223,10 +226,10 @@ img {
     @apply w-32 h-32;
   }
   .main .title {
-    @apply text-lg;
+    @apply text-xl;
   }
   .main .price {
-    @apply text-xl;
+    @apply text-2xl;
   }
 }
 
@@ -240,11 +243,8 @@ img {
   .item .main {
     @apply mx-5;
   }
-  .main .title {
-    @apply text-xl;
-  }
   .main .price {
-    @apply text-2xl;
+    @apply mt-1;
   }
 }
 
