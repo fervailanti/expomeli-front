@@ -21,11 +21,11 @@ In the project directory, you can run:
 
 - `yarn start`: Will build css and runs the app in the development mode at [http://localhost:3000](http://localhost:3000).
 
-- `yarn build:css`: Will only build css in development mode.
+- `yarn build:css`: Will only build css in development mode (without purge css).
 
-- `yarn build:dev`: Will build css in development mode and build the app for production to the `build` folder.
+- `yarn build:css:prod`: Will only build css in production mode (with purge css).
 
-- `yarn build:prod`: Will build css in production mode and build the app for production to the `build` folder.
+- `yarn build`: Will build the app for production to the `build` folder.
 
 - `yarn test`: Launches the test runner in the interactive watch mode.<br />
 
