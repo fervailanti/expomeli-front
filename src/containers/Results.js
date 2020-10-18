@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react'
-import qs from 'query-string'
 import ResultsList from '../components/ResultsList'
 import { useHistory, Redirect } from 'react-router-dom'
 import { getItemsByQuery } from '../rest/mercadolibre'
+import qs from 'query-string'
 
 const Results = ({ location }) => {
   const history = useHistory()
@@ -11,7 +11,7 @@ const Results = ({ location }) => {
   const [results, setResults] = useState([])
 
   const goToItemDetail = (id) => {
-    history.push(`/items/${id}`)
+    history.push({ pathname: `/items/${id}`, state: { prevSearch: search } })
   }
 
   useEffect(() => {
