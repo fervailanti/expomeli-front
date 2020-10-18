@@ -27,7 +27,7 @@ const Results = ({ location }) => {
 
   const content = {
     redirect: () => <Redirect to="/" />,
-    results: () => <ResultsList results={results} onClick={goToItemDetail} isLoading={isLoading} />
+    results: () => <ResultsList results={results} onItem={goToItemDetail} isLoading={isLoading} />
   }
 
   return <section className="layout">{!search ? content.redirect() : content.results()}</section>

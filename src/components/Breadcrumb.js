@@ -9,7 +9,7 @@ const Breadcrumb = ({ categories = [] }) => (
       </p>,
       <img
         key={'img' + index}
-        src={images.rightChevron}
+        src={images.rightArrow}
         alt="arrow-icon"
         className="h-3 mx-2 last:hidden"
       />

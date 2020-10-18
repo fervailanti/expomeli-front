@@ -4,29 +4,32 @@ import { formatPrice } from '../utils/formatPrice'
 import { WithLoader } from './WithLoader'
 import { formatCondition } from '../utils/formatCondition'
 import Breadcrumb from './Breadcrumb'
+import EmptyState from './EmptyState'
 
-const ResultsList = ({ results, onClick }) => {
+const ResultsList = ({ results, onItem }) => {
   const { categories, items } = results
+  const content = {
+    empty: () => <EmptyState />,
+    list: () =>
+      items.map((item, index) => {
+        const action = () => onItem(item.id)
+        return (
+          <ResultItem
+            key={index}
+            image={item.picture}
+            title={item.title}
+            freeShipping={item.free_shipping}
+            condition={formatCondition(item.condition)}
+            price={formatPrice(item.price)}
+            action={action}
+          />
+        )
+      })
+  }
   return (
     <>
-      <Breadcrumb categories={categories} />
-      <div className="results-list">
-        {items.map((item, index) => {
-          const { id, picture, title, price, free_shipping, condition } = item
-          const action = () => onClick(id)
-          return (
-            <ResultItem
-              key={index}
-              image={picture}
-              title={title}
-              freeShipping={free_shipping}
-              condition={formatCondition(condition)}
-              price={formatPrice(price)}
-              action={action}
-            />
-          )
-        })}
-      </div>
+      {categories.length > 0 && <Breadcrumb categories={categories} />}
+      <div className="results-list">{items.length ? content.list() : content.empty()}</div>
     </>
   )
 }
